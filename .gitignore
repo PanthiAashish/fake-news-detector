@@ -1,0 +1,16 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+*.env
+venv/
+env/
+
+# Jupyter checkpoint files
+.ipynb_checkpoints
+
+# Model + outputs (optional)
+models/*.pkl
+outputs/*.png
