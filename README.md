@@ -6,7 +6,7 @@ Built as a final ML project using the [Fake and Real News Dataset](https://www.k
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fake-news-detector/
@@ -43,7 +43,7 @@ Logistic Regression significantly outperformed Naive Bayes in both accuracy and 
 
 ---
 
-## 📷 Sample Visuals
+## Sample Visuals
 
 ### Confusion Matrix (Logistic Regression)
 ![Confusion Matrix](outputs/confusion_matrix_logistic_regression.png)
@@ -55,7 +55,7 @@ Fake News | Real News
 
 ---
 
-## 🧠 ML & NLP Concepts Covered
+## ML & NLP Concepts Covered
 
 - Supervised Learning (Binary Classification)
 - Text Cleaning & Preprocessing
@@ -68,7 +68,7 @@ Fake News | Real News
 
 ## How to Run the Project
 
-### 🔧 Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
