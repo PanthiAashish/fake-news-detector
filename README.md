@@ -1,6 +1,6 @@
 # Fake News Detector using Machine Learning & NLP
 
-This project classifies news articles as **real** or **fake** using a full machine learning pipeline with **NLP preprocessing**, **TF-IDF vectorization**, and two classification models: **Naive Bayes** and **Logistic Regression**.
+This project classifies news articles as **real** or **fake** using a full machine learning pipeline with **NLP preprocessing**, **TF-IDF vectorization**, and two classification models: **Naive Bayes**, **Logistic Regression** and **LSMT (Deep Learning)**.
 
 Built as a final ML project using the [Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset).
 
@@ -34,13 +34,29 @@ fake-news-detector/
 
 ## Models Used
 
-| Model               | Accuracy | F1 Score |
-|--------------------|----------|----------|
-| Naive Bayes         | 93.54%   | 93.21%   |
-| Logistic Regression | 98.26%   | 98.02%   |
+| Model                        | Accuracy | Precision | Recall | F1 Score |
+|------------------------------|----------|-----------|--------|----------|
+| **LSTM (Deep Learning)**     | 98.57%   | 97.81%    | 99.23% | 98.51%   |
+| **Logistic Regression**      | 98.29%   | 97.99%    | 98.40% | 98.20%   |
+| **Naive Bayes**              | 93.54%   | 93.23%    | 93.18% | 93.21%   |
 
-Logistic Regression significantly outperformed Naive Bayes in both accuracy and F1 score.
 
+###  Breakdown & Observations
+
+#### LSTM (Deep Learning)
+- **Best performing model overall** in both recall and F1 score.
+- Especially strong at minimizing false negatives — great for **not missing** fake news.
+- Slightly more complex to train and deploy, but yields high returns.
+
+#### Logistic Regression
+- Very competitive and almost on par with LSTM.
+- Simple, interpretable, and fast to train — an excellent baseline for NLP tasks.
+- Balanced performance makes it highly reliable for production use.
+
+#### Naive Bayes
+- Performs reasonably well, but clearly lower than the other two.
+- Extremely fast and lightweight — suitable for quick prototyping.
+- Better as a benchmark model rather than final deployment.
 ---
 
 ## Sample Visuals
@@ -60,6 +76,7 @@ Fake News | Real News
 - Supervised Learning (Binary Classification)
 - Text Cleaning & Preprocessing
 - TF-IDF Vectorization
+- LSTM with Embedding & Tokenizer
 - Naive Bayes & Logistic Regression
 - Model Evaluation (Precision, Recall, F1 Score)
 - Data Visualization (WordClouds, Confusion Matrix)
@@ -91,7 +108,6 @@ notebooks/Fake_News_Detection.ipynb
 
 ## Future Work
 
-- Add deep learning models (LSTM, BERT)
 - Deploy via Streamlit or Flask
 - Extend to multiclass classification (e.g. topic labeling)
 
@@ -103,4 +119,4 @@ MIT License. Free to use and modify with credit.
 
 ---
 
-Built by Aashish Panthi as part of a Machine Learning final project.
+Built by Aashish Panthi and Prashan Sapkota as part of a Machine Learning final project.
