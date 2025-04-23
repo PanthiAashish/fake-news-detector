@@ -15,5 +15,6 @@ env/
 models/*.pkl
 outputs/*.png
 
-/data
+data/
 models/
+
