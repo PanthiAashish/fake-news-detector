@@ -14,3 +14,6 @@ env/
 # Model + outputs (optional)
 models/*.pkl
 outputs/*.png
+
+/data
+models/
